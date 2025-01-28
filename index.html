@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Réseaux</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2a2a48);
+            color: #fff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #FFD700;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #fff;
+            background: #333;
+            border-radius: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+            .links a:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6);
+                background: #FFD700;
+                color: #333;
+            }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Adieu Meta ! Il est temps de mettre un terme à cette collabo(ration)</h1>
+        <p>Si vous voulez garder un contact avec moi, ce sera dans la vie réelle ou ici :</p>
+        <div class="links">
+            <a href="mailto:lord_fou@hotmail.com">Email</a>
+            <a href="https://discord.com/users/lordfou" target="_blank">Discord</a>
+            <a href="https://steamcommunity.com/id/lordfou" target="_blank">Steam</a>
+            <a href="https://account.xbox.com/Profile?GamerTag=Lord%20Fou" target="_blank">Xbox</a>
+        </div>
+    </div>
+</body>
+</html>
