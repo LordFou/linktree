@@ -11,18 +11,31 @@
             color: #fff;
             margin: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
             overflow: hidden;
         }
 
+        .banner {
+            width: 100%;
+            max-height: 200px;
+            overflow: hidden;
+        }
+
+            .banner img {
+                width: 100%;
+                object-fit: cover;
+            }
+
         .container {
             text-align: center;
+            margin-top: 20px; /* Ajoute de l'espace sous l'image */
+            max-width: 600px;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: #FFD700;
             margin-bottom: 20px;
             animation: fadeIn 1s ease-in-out;
@@ -67,7 +80,6 @@
                 transform: scale(1.2);
             }
 
-
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -84,8 +96,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Bandeau des trois singes -->
+    <div class="banner">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Three_wise_monkeys_figure.jpg"
+             alt="Les trois singes de la sagesse">
+    </div>
+
     <div class="container">
-        <h1>Adieu Facebook ! Je m'en vais d'ici avant que tu ne choppes des <img src="Ressources/Images/meta-logo.svg" alt="Meta" width="20"> stases. Bon débarras !</h1>
+        <h1>
+            Adieu Facebook !<br>
+            Je m'en vais d'ici avant que tu ne choppes des
+            <img src="Ressources/Images/meta-logo.png" alt="Meta" width="30"> stases.<br>
+            Bon débarras !
+        </h1>
         <p>
             Si vous voulez garder un contact avec moi, ce sera dans la vie r&eacute;elle ou ici :
         </p>
@@ -103,11 +127,10 @@
                 <i class="fab fa-xbox"></i> Xbox
             </a>
             <a href="https://signal.group/#CjQKIN5rmim2rAFF0FZCYNPN9leoZoShWlnHXAPTWHvf2m4VEhAC46u9GiatRTruImlwuSrN">
-                <div class="default-content">
-                    <i class="fab fa-signal"></i> <span>Signal</span>
-                </div>
+                <i class="fab fa-signal"></i> Signal
             </a>
         </div>
     </div>
+
 </body>
 </html>
